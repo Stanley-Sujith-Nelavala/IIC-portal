@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col s12 m8">
+        <h3>{{stories2.title}}
+            <small>{{{editIcon2 stories2.user user stories2._id false}}}</small>
+        </h3>
+        <div class="card stories2">
+            <div class="card-content">
+                <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                {{{stories2.body}}}<br>
+                {{{stories2.status1}}}<br>
+                {{{stories2.status2}}}<br>
+                {{{stories2.status3}}}<br>
+                {{{stories2.status4}}}<br>
+                {{{stories2.status5}}}<br>
+                {{{stories2.status6}}}<br>
+                {{{stories2.status7}}}<br>
+                {{{stories2.status8}}}<br>
+                {{{stories2.status9}}}<br>
+                {{{stories2.status10}}}<br>
+                {{{stories2.status11}}}<br>
+                {{{stories2.status12}}}<br>
+                {{{stories2.status13}}}<br>
+                {{{stories2.status14}}}<br>
+                {{{stories2.status15}}}<br>
+                {{{stories2.status16}}}<br>
+                {{{stories2.status17}}}<br>
+                {{{stories2.status18}}}<br>
+                {{{stories2.status19}}}<br>
+                {{{stories2.status20}}}<br>
+                {{{stories2.status21}}}<br>
+                {{{stories2.status1}}}<br>
+                
+                {{{stories2.title2}}}
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title">{{stories2.user.displayName}}</span>
+                <img src="{{stories2.user.image}}" class="circle responsive-img img-small">
+            </div>
+            <div class="card-action">
+                <a href="/stories/st1/user/{{stories2.user._id}}">More From {{stories2.user.firstName}}</a>
+            </div>
+        </div>
+    </div>
+</div>

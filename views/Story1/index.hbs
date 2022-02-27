@@ -1,4 +1,4 @@
-<h1>Form 1 - Ideas</h1>
+<h1>Form 2</h1>
 <div class="row">
     <!--{{#each stories}}
     <div class="col s12 m12">
@@ -25,7 +25,11 @@
     {{/each}}-->
 </div>
 
-{{#if stories}}
+<div class="fixed-action-btn">
+    <a href="/stories/add2" class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-plus"></i></a>
+</div>
+
+{{#if stories2}}
 <table class="striped">
     <thead>
         <tr>
@@ -38,13 +42,13 @@
         </tr>
     </thead>
     <tbody>
-        {{#each stories}}
+        {{#each stories2}}
         <tr>
-            <td><a href="/stories/{{_id}}">{{title}}</a></td>
+            <td><a href="/stories/st1/{{_id}}">{{title}}</a></td>
             <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
-            <td><a href="/stories/user/{{user._id}}">{{user.displayName}}</a><td>
+            <td><a href="/stories/st1/user/{{user._id}}">{{user.displayName}}</a><td>
             <td><span class="dash-status">{{status1}}</span></td>
-            <td><a href="/stories/{{_id}}" class="btn grey">Read More</a></td>
+            <td><a href="/stories/st1/{{_id}}" class="btn grey">Read More</a></td>
         </tr>
         {{/each}}
     </tbody>
